@@ -13,8 +13,10 @@ public class SnakeLadder {
 		Random random1 = new Random();
 		int winningPosition=100;
 		int player1Position = 0;
+		int diceRoll=0;
 
 		while (player1Position < winningPosition) {
+			diceRoll++;
 			int playOption = random1.nextInt(3);
 			System.out.println("play option: " + playOption);
 			switch (playOption) {
@@ -35,6 +37,7 @@ public class SnakeLadder {
 				break;
 
 			}
+			System.out.println("No. of time dice rolled:"+diceRoll);
 		}
 
 	}
